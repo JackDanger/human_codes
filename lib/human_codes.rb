@@ -1,6 +1,7 @@
 module HumanCodes
   SAFE_NUMBERS = '0','2','3','4','5','6','7','8','9'
   SAFE_LETTERS = 'A','B','C','D','E','F','G','H','J','K','M','N','P','Q','R','S','T','U','V','W','X','Y','Z'
+  SAFE_BASE    = SAFE_NUMBERS.size + SAFE_LETTERS.size
   SAFE_CHARACTERS_AS_ASCII =
       [SAFE_NUMBERS + SAFE_LETTERS].flatten.inject({}) do |hash, char|
         hash[char[0]] = hash.size
@@ -18,9 +19,9 @@ module HumanCodes
       string = ""
       value = self
       until value == 0
-        mod = value % 32
+        mod = value % SAFE_BASE
         string << SAFE_CHARACTERS_AS_STRINGS[mod]
-        value = value / 32
+        value = value / SAFE_BASE
       end
       string.reverse
     end
@@ -35,7 +36,7 @@ module HumanCodes
       (0...key.size).each do |i|
         char = key[i]
         integer = SAFE_CHARACTERS_AS_ASCII[char]
-        val = val + (integer * (32 ** i))
+        val = val + (integer * (SAFE_BASE ** i))
       end
       val
     end
