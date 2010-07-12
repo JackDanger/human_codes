@@ -1,12 +1,12 @@
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "alphadecimal"
-    gem.summary = %Q{Convert integers to base62 strings (A-Za-z0-9) and back.  A handy way to shorten long numbers.}
-    gem.description = %Q{Convert integers to base62 strings (A-Za-z0-9) and back. Ideal for url shorteners like Shawty-server.}
+    gem.name = "human_codes"
+    gem.summary = %Q{Convert integers to human-readable compressed alphanumeric strings and back. Lets humans enter very long integers quickly.}
+    gem.description = %Q{Convert integers to human-readable compressed alphanumeric strings and back. Lets humans enter very long integers quickly.}
     gem.email = "rubygems@6brand.com"
-    gem.homepage = "http://github.com/JackDanger/alphadecimal"
-    gem.authors = ["Mike Mondragon", "Jack Danger Canty"]
+    gem.homepage = "http://github.com/JackDanger/human_codes"
+    gem.authors = ["Jack Danger Canty"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
