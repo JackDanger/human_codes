@@ -27,7 +27,8 @@ module HumanCodes
   end
   
   module String
-    def human_code
+    def human_code(options = {})
+      return upcase.human_code if options[:fix_case]
       return self unless is_human_code?
       val = 0
       key = reverse

@@ -17,6 +17,14 @@ class TestHumanCodes < Test::Unit::TestCase
     assert_kind_of Bignum, 'AHEATZZTAJBC43JZY'.human_code
   end
   
+  def test_string_allows_optional_auto_upcasing
+    assert_kind_of Fixnum, 'abh56ak'.human_code(:fix_case => true)
+  end
+  
+  def test_string_does_not_automatically_upcase
+    assert_kind_of String, 'abh56ak'.human_code
+  end
+  
   def test_string_becomes_fixnum
     assert_kind_of Fixnum, 'J'.human_code
   end
