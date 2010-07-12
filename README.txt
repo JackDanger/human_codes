@@ -1,33 +1,40 @@
-= alphadecimal
+= Human Codes
 
-* http://github.com/JackDanger/alphadecimal
+* http://github.com/JackDanger/human_codes
 
 == DESCRIPTION:
 
-Convert integers to base62 strings (A-Za-z0-9) and back.  A handy
-way to shorten long numbers.
+Convert integers to short, human-scannable alphanumeric strings (A-Za-z0-9) and back.
+
+Unlike the code behind url shorteners, this supports case-insensitive conversion and
+omits letters and numbers that are difficult to distinguish by sight (like 'l' and '1')
 
 == SYNOPSIS:
 
-  # 45.alphadecimal
-  # => 'j'
-  # 5234233.alphadecimal
-  # 'Lxf7'
-  # 'yH783Xx3Ajz99'.alphadecimal
+  # 45.human_code
+  # => 'J'
+  # 5234233.human_code
+  # 'THF7'
+  # 'AYH783XM3AJZ99'.human_code
   # => 194466611442340388130115
-  # 194466611442340388130115.alphadecimal
-  # => 'yH783Xx3Ajz99'
+  # 194466611442340388130115.human_code
+  # => 'AYH783XM3AJZ99'
 
 
 == INSTALL:
 
-* sudo gem install alphadecimal
+* sudo gem install human_codes
+
+== WHERE CREDIT IS DUE
+
+This project was inspired by my and Mike Mondragon's alphadecimal, Shane Becker's
+NewBase60, and busy retail workers everywhere who need to enter coupon codes.
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 Jack Danger Canty, Mike Mondragon
+Copyright (c) 2008 Jack Danger Canty
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
