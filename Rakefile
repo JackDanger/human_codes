@@ -3,7 +3,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "human_codes"
     gem.summary = %Q{Convert integers to human-readable compressed alphanumeric strings and back. Lets humans enter very long integers quickly.}
-    gem.description = %Q{Convert integers to human-readable compressed alphanumeric strings and back. Lets humans enter very long integers quickly.}
+    gem.description = %Q{Convert integers to human-readable compressed alphanumeric strings and back. Lets humans enter very long integers quickly. Uses base-32 compression of integers.}
     gem.email = "rubygems@6brand.com"
     gem.homepage = "http://github.com/JackDanger/human_codes"
     gem.authors = ["Jack Danger Canty"]
