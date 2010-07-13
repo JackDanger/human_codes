@@ -1,5 +1,5 @@
 module HumanCodes
-  SAFE_NUMBERS = '0','2','3','4','5','6','7','8','9'
+  SAFE_NUMBERS = '2','3','4','5','6','7','8','9'
   SAFE_LETTERS = 'A','B','C','D','E','F','G','H','J','K','M','N','P','Q','R','S','T','U','V','W','X','Y','Z'
   SAFE_BASE    = SAFE_NUMBERS.size + SAFE_LETTERS.size
   SAFE_CHARACTERS_AS_ASCII =
@@ -14,8 +14,7 @@ module HumanCodes
 
   module Number
     def human_code
-      return self if nil? || self < 0
-      return to_s if self == 0
+      return self if nil? || self <= 0
       string = ""
       value = self
       until value == 0

@@ -4,7 +4,7 @@
 
 == DESCRIPTION:
 
-Convert integers to short, human-scannable alphanumeric strings (A-Za-z0-9) and back.
+Convert integers to short, human-scannable alphanumeric strings (skipping 'l', '1', 'o', '0', etc.) and back.
 
 Unlike the code behind url shorteners, this supports case-insensitive conversion and
 omits letters and numbers that are difficult to distinguish by sight (like 'l' and '1')
