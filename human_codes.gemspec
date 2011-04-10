@@ -5,17 +5,19 @@
 
 Gem::Specification.new do |s|
   s.name = %q{human_codes}
-  s.version = "1.1.2"
+  s.version = "1.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jack Danger Canty"]
-  s.date = %q{2011-03-04}
+  s.date = %q{2011-04-10}
   s.description = %q{Convert integers to human-readable compressed alphanumeric strings and back. Lets humans enter very long integers quickly. Uses base-31 compression of integers.}
   s.email = %q{rubygems@6brand.com}
   s.extra_rdoc_files = [
+    "LICENSE",
     "README.markdown"
   ]
   s.files = [
+    "LICENSE",
     "Manifest.txt",
     "README.markdown",
     "Rakefile",
